@@ -1,153 +1,108 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="" >
-<link rel="js" href=">"
-<title>Blog UNIR - Tarea 1</title>
-
-<style type="text/css">
-html, body {
-	font-family: Verdana, Geneva, sans-serif;
-	font-weight: bold;
-	background-color: #333;
-}
-header, section, footer, aside, article, nav, main {
-	margin: 1%;
-	padding: 30px;
-	font-size: 30px;
-	text-align: center;
-	border: solid;
-}
-header {
-	background-color: #9CC;
-	color: #FFF;
-	width: 95%;
-}
-nav {
-	background-color: #A0ABE3;
-	color: #FFF;
-	width: 95%;
-}
-
-main {
-	background-color: #A0ABE3;
-	color: #FFF;
-	width: 95%;
-}
-section {
-	float:none;
-	background-color: #BCDFDB;
-	width: 95%;
-	color: #FFF;
-}
-article {
-	background-color: #BCDFDB;
-	width: 95%;
-	color: #FFF;
-}
-aside {
-	background-color: #BCDFDB;
-	width: 18%;
-	color: #FFF;
-	float: left;
-}
-footer {
-	background-color: #6DB4FA;
-	width: 95%;
-	color: #FFF;
-	clear: both;
-}
-a:hover {
-	background-color: #BD3;
-}
-.leftcolumn {
-	float: left;
-	width: 75%;
-}
-.rightcolumn {
-	float: left;
-	width: 25%;
-	padding-left: 20px;
-}
-.fakeimg {
-	background-color: #aaa;
-	width: 100%;
-	padding: 20px;
-}
-.card {
-	background-color: white;
-	padding: 20px;
-	margin-top: 20px;
-}
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-#nombre {
-	font-size: 16px;
-	font-family: "Times New Roman", Times, serif;
-	background: #D0D8D9;
-	border: 2px groove white;
-	border-radius: 15px;
-	box-shadow: 3px 5px 5px 0 rgba(0,0,50,12);
-}
-#apellidos {
-	font-size: 16px;
-	background: #D0D8D9;
-	font-family: "Times New Roman", Times, serif;
-	border: 2px groove white;
-	border-radius: 15px;
-	box-shadow: 3px 5px 5px 0 rgba(0,0,50,12);
-}
-#email {
-	font-size: 16px;
-	background: #D0D8D9;
-	font-family: "Times New Roman", Times, serif;
-	border: 2px groove white;
-	border-radius: 15px;
-	box-shadow: 3px 5px 5px 0 rgba(0,0,50,12);
-}
-#telefono {
-	font-size: 16px;
-	background: #D0D8D9;
-	font-family: "Times New Roman", Times, serif;
-	border: 2px groove white;
-	border-radius: 15px;
-	box-shadow: 3px 5px 5px 0 rgba(0,0,50,12);
-}
-#comentario {
-	font-size: 16px;
-	background: #D0D8D9;
-	font-family: "Times New Roman", Times, serif;
-	border: 2px groove white;
-	border-radius: 15px;
-	box-shadow: 3px 5px 5px 0 rgba(0,0,50,12);
-}
-</style>
+<link rel="stylesheet" href="Scripts/Estilos.css" >
+<link rel="js" href="Scripts/Formulario.js">
+<link rel="js" href="Scripts/jquery-3.6.0.js">
+<link rel="js" href="Scripts/jquery-3.6.0.min.js">
+<script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
 </head>
 
 <body>
-    <header>
-      <h1>What Does WWF Do?</h1>
-          <p>WWF's mission:</p>
-          <nav class="menu">
-            <ul>
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Sobre nosotros</a></li>
-              <li><a href="#">Contacto</a></li>
-            </ul>
-          </nav>
-    </header>
-    <main>
-    	<section>
-        	<article>
-            </article>
+<header>
+  <h1>Web Taller 1</h1>
+  <h3>El siguiente es el sitio web solicitado para el proyecto.</h3>
+  <nav class="menu">
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">Contactenos</a></li>
+      <li><a href="">Mision</a></li>
+      <li><a href="">Vision</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <table width=95% border="0">
+    <tr>
+      <th width="auto" scope="col"> <section>
+          <h1 class="titulo">"Formulario de Actualizacion de datos para Votacion:"</h1>
+          <center>
+            <form name="formulario" id="formulario" class="formulario" action="" method="post">
+              Nombre   :
+              <input name="nombre" id="nombre" type="text"/>
+              <br />
+              <br />
+              Apellidos:
+              <input name="apellidos" id="apellidos" type="text"/>
+              <br />
+              <br />
+              Telefono :
+              <input name="telefono" id="telefono" type="text"/>
+              <br />
+              <br />
+              Email    :
+              <input name="email" id="email" type="text"/>
+              <br />
+              <br />
+              Fecha Nacimiento    :
+              <input name="FechaNacimiento" id="FechaNacimiento" type="date" placeholder="fecha de nacimiento"/>
+              <br />
+              <br />
+              Comentarios: <br />
+              <br />
+              <textarea name="comentarios" id="comentario" rows="15" cols="30"></textarea>
+              <br />
+              <br />
+              <input name="submit" id="submit" type="submit" value="Validar" />
+              <br />
+              <br />
+              <input name="reset" id="reset" type="reset" value="Restablecer" />
+            </form>
+          </center>
+          <article>
+            <div class="Div1">
+              <p>¿Qué es JavaScript?¡Bienvenido al curso de JavaScript para principiantes de MDN! En este artículo veremos JavaScript desde un alto nivel, respondiendo preguntas como "¿Qué es?" y "¿Qué puedes hacer con él?", y asegúrate de estar cómodo con el propósito de JavaScript.
+                </p1>
+                <lord-icon
+                    src="https://cdn.lordicon.com/eszyyflr.json"
+                    trigger="loop"
+                    colors="primary:#121331,secondary:#08a88a"
+                    style="width:150px;height:150px"> </lord-icon>
+            </div>
+          </article>
+          <article>
+            <div class="Div2">
+              <p>Explicación rápida del código. Estoy comprobando si la extensión del archivo no es ni .pdf ni .docx . Si tampoco lo es la extensión, estoy usando la función Notificar para mostrar el mensaje de error al usuario.
+                </p1>
+                <lord-icon
+                    src="https://cdn.lordicon.com/rhvddzym.json"
+                    trigger="loop"
+                    style="width:150px;height:150px"> </lord-icon>
+            </div>
+          </article>
         </section>
-    </main>
+      </th>
+      <th width="auto" scope="col"> <div class="Div3">
+          <lord-icon
+        src="https://cdn.lordicon.com/rqqkvjqf.json"
+        trigger="loop"
+        colors="primary:#e4e4e4,secondary:#ffffff"
+        style="width:150px;height:150px"> </lord-icon>
+          <h4>Qué es Ajax</h4>
+          <h4><strong>Definición:
+            Las siglas de Ajax responden a Asynchronous JavaScript y XML, o Javascript y XML Asincrono. Ajax es un lenguaje de programación que permite la actualización de secciones específicas de contenido en una página web, sin necesidad de recargar completamente la página</strong></h4>
+        </div>
+      </th>
+    </tr>
+  </table>
+</main>
 <footer>
-  <p>Author: Hege Refsnes</p>
-  <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+  <p>Creando Websites</p>
+  <p> 
+  <a href="Sandovaledwin0007@gmail.com">
+  <p>sandovaledwin0007@gmail.com</p>
+  </a>
+  </p>
 </footer>
 </body>
 </html>
